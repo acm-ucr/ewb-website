@@ -11,7 +11,7 @@
 
 ## Figma
 
-[EWB @ UCR Website Figma Design File]([https://www.figma.com/](https://www.figma.com/file/5HIkPeKIcvLhtVuYDpOBMx/EWB?type=design&node-id=0%3A1&mode=design&t=ZAHAkCifpAN8nf7F-1))
+[EWB @ UCR Website Figma Design File](https://www.figma.com/file/5HIkPeKIcvLhtVuYDpOBMx/EWB?type=design&node-id=0%3A1&mode=design&t=ZAHAkCifpAN8nf7F-1)
 
 ## Node.js
 
