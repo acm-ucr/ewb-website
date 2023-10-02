@@ -1,4 +1,4 @@
-const Picture = () => {
+const Picture = ({ picture }) => {
   return <div>Picture</div>;
 };
 
