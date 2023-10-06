@@ -1,5 +1,5 @@
-const Subtitle = ({ title }) => {
-  return <div>Subtitle</div>;
+const Subtitle = ({ title, desptrion }) => {
+  return <div>{title}</div>;
 };
 
 export default Subtitle;
