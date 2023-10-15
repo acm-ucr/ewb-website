@@ -1,21 +1,14 @@
-import React from "react";
 import { COLORS } from "../data/colors";
-const Title = ({ subTitle = "LEARN WHO WE ARE", title = "ABOUT US" }) => {
+const Title = ({ subTitle, title }) => {
   const titleWords = title.split(" ");
   return (
-    <div>
-      <p
-        className={
-          COLORS.green.text + " font-semibold mb-0 flex justify-center"
-        }
-      >
-        {subTitle}
-      </p>
-      <h2 className={" mt-0 font-bold"}>
+    <div className={"flex flex-col justify-center items-center"}>
+      <p className={COLORS.green.text + " font-semibold mb-0"}>{subTitle}</p>
+      <p className={" mt-0 font-bold text-3xl"}>
         <span
           className={
             COLORS.blue.bg +
-            " text-white underline underline-offset-[14px] decoration-[#80C393] decoration-8"
+            " text-white underline underline-offset-[14px] decoration-ewb-green decoration-8"
           }
         >
           {titleWords[0]}
@@ -23,7 +16,7 @@ const Title = ({ subTitle = "LEARN WHO WE ARE", title = "ABOUT US" }) => {
         <span className={COLORS.blue.text}>
           {" " + titleWords.slice(1).join(" ")}
         </span>
-      </h2>
+      </p>
     </div>
   );
 };
