@@ -1,22 +1,31 @@
-export const items = [
+export const navigation = [
   {
     name: "ABOUT",
     link: "about",
-    drop: false,
+    sub: [],
   },
   {
     name: "PROJECTS",
     link: "projects",
-    drop: true,
+    sub: [
+      { name: "Costa Rica", link: "costa-rica" },
+      { name: "Tanzania", link: "tanzania" },
+      {
+        name: "Water Quality and Filtration",
+        link: "water-quality-and-filtration",
+      },
+      { name: "Robotics", link: "robotics" },
+      { name: "Air Quality System", link: "air-quality-system" },
+    ],
   },
   {
     name: "EVENTS",
     link: "events",
-    drop: false,
+    sub: [],
   },
   {
     name: "BOARD",
     link: "board",
-    drop: false,
+    sub: [],
   },
 ];

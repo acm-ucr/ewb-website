@@ -4,7 +4,7 @@ import React from "react";
 import blueLogo from "../../public/assets/blueLogo.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { items } from "../data/navigation";
+import { navigation } from "../data/navigation";
 import Nav from "react-bootstrap/Nav";
 import { useState } from "react";
 import { NavDropdown } from "react-bootstrap";
@@ -12,7 +12,7 @@ import { NavDropdown } from "react-bootstrap";
 const Navigation = () => {
   const [selected, setSelected] = useState("");
   return (
-    <Navbar // Removed fixed="top"
+    <Navbar
       collapseOnSelect
       expand="md"
       fixed="top"
@@ -24,9 +24,9 @@ const Navigation = () => {
 
       <Navbar.Collapse className="items-center mr-12 md:justify-end justify-center">
         <Nav className="mb-2 w-12/12 no-underline text-2xl flex items-center">
-          {items.map((item, index) => (
+          {navigation.map((item, index) => (
             <div key={index}>
-              {item.drop ? (
+              {item.sub.length > 0 ? (
                 <NavDropdown
                   onClick={() => setSelected(item.name)}
                   title={
