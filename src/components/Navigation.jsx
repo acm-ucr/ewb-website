@@ -33,53 +33,32 @@ const Navigation = () => {
                     <span
                       className={`hover:cursor-pointer rounded-full mb-0 py-1 px-4 no-underline !text-black text-2xl whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
                         selected === "PROJECTS" &&
-                        "!bg-ewb-blue-200 rounded-full text-white hover:!text-white" // To remove blue hover i set new hover to white
+                        "!bg-ewb-blue-200 rounded-full text-white hover:!text-white"
                       }`}
                     >
                       {item.name}
                     </span>
                   }
                 >
-                  <NavDropdown.Item
-                    className="text-white hover:!bg-ewb-green !bg-ewb-blue-200"
-                    href="#"
-                  >
-                    Costa Rica
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-white hover:!bg-ewb-green !bg-ewb-blue-200"
-                    href="#"
-                  >
-                    Tanzania
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-white hover:!bg-ewb-green !bg-ewb-blue-200"
-                    href="#"
-                  >
-                    Water Quality and Filtration
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-white hover:!bg-ewb-green !bg-ewb-blue-200"
-                    href="#"
-                  >
-                    Robotics
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-white hover:!bg-ewb-green !bg-ewb-blue-200"
-                    href="#"
-                  >
-                    Air Quality System
-                  </NavDropdown.Item>
+                  {item.sub.map((country, index) => (
+                    <NavDropdown.Item
+                      key={index}
+                      className="text-white hover:!bg-ewb-green !bg-ewb-blue-200"
+                      href={country.link}
+                    >
+                      {country.name}
+                    </NavDropdown.Item>
+                  ))}
                 </NavDropdown>
               ) : (
                 <Nav.Link
                   as={Link}
                   key={index}
                   href={item.link}
-                  onClick={() => setSelected(item.name)} // Blue border when selected became squared immediately after selecting something else so applied rounded-full
+                  onClick={() => setSelected(item.name)}
                   className={`hover:cursor-pointer rounded-full mb-0 py-1 px-4 no-underline !text-black text-2xl whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
                     selected === item.name &&
-                    "!bg-ewb-blue-200 rounded-full text-white hover:!text-white" // To remove blue hover i set new hover to white
+                    "!bg-ewb-blue-200 rounded-full text-white hover:!text-white"
                   }`}
                 >
                   {item.name}
