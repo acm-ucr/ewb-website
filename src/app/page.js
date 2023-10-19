@@ -10,7 +10,6 @@ const Home = () => {
       <About />
       <WhyJoin />
       <Projects />
-      <Social />
     </>
   );
 };
