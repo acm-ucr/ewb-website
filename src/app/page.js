@@ -9,18 +9,6 @@ const Home = () => {
       <About />
       <WhyJoin />
       <Projects />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };
