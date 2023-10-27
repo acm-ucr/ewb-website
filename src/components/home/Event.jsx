@@ -6,7 +6,7 @@ const Event = ({ start, end, location, name, description, color }) => {
   return (
     <div className=" bg-ewb-blue-100 w-3/5 inline-flex">
       <div
-        className={`text-white text-center w-1/4 aspect-square p-1 ${COLORS[color].bg}`}
+        className={`text-white text-center w-1/4 aspect-square p-1 flex flex-col items-center justify-center ${COLORS[color].bg}`}
       >
         <p className="font-bold text-6xl break-all px-4 align-middle ">
           {startDate[0]} {startDate[1]}
