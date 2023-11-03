@@ -3,8 +3,8 @@ const CostaRica = () => {
   return (
     <div className="grid grid-cols-3 gap-10 m-28">
       <div className="col-span-2 pb-4">
-        <Subtitle title="General Overview"></Subtitle>
-        <p className="ml-2 mt-1">
+        <Subtitle title="General Overview"/>
+        <div className="ml-2 mt-1">
           In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and
           her organization Biogas Pococi, we are working to implement
           Biodigestor tanks and micro controlling systems. She has already
@@ -12,21 +12,21 @@ const CostaRica = () => {
           clean fuel without the emission of harmful particulates that has had
           detrimental impacts on the health of rural inhabitants. The
           Biodigestor also provides a source of fertilizer for farmers to use.
-        </p>
+        </div>
       </div>
       <div>
         <img
           src="/images/CostaRica/CostaRica1.gif"
           alt="Costa Rica Image 1"
-        ></img>
+         />
       </div>
 
       <div className="col-span-2 pb-4">
         <Subtitle
           title="Motivation"
           description="Rural communities are already disadvantaged socioeconomically"
-        ></Subtitle>
-        <p className="ml-2 mt-1">
+        />
+        <div className="ml-2 mt-1">
           <ul
             className="marker:text-ewb-blue-200 ml-4"
             style={{ listStyleType: "square" }}
@@ -38,21 +38,21 @@ const CostaRica = () => {
             <li>Inspire them to peruse education</li>
             <li>Improve infrastructure of land and quality of life</li>
           </ul>
-        </p>
+        </div>
       </div>
       <div>
         <img
           src="/images/CostaRica/CostaRica2.gif"
           alt="Costa Rica Image 2"
-        ></img>
+        />
       </div>
 
       <div className="col-span-3 pb-4">
         <Subtitle
           title="Educational Micro Controller Projects"
           description="Education is very hard to obtain affecting isolated rural communities the most"
-        ></Subtitle>
-        <p className="ml-2 mt-1">
+        />
+        <div className="ml-2 mt-1">
           <ul
             className="marker:text-ewb-blue-200 ml-4"
             style={{ listStyleType: "square" }}
@@ -68,9 +68,8 @@ const CostaRica = () => {
               way of life
             </li>
             <li>
-              {" "}
               A water treatment system will also be implemented, to learn more
-              check out the{" "}
+              check out the {" "}
               <a
                 href="water-quality-and-filtration"
                 className="text-ewb-blue-200 font-bold hover:text-ewb-green"
@@ -79,7 +78,7 @@ const CostaRica = () => {
               </a>
             </li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   );
