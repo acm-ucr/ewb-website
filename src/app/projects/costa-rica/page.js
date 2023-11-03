@@ -1,7 +1,11 @@
 import React from "react";
-
+import CostaRica from "@/components/projects/CostaRica";
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <CostaRica />
+    </>
+  );
 };
 
 export default page;
