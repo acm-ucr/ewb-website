@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import Landing from "@/components/home/Landing";
 import Projects from "@/components/home/Projects";
 import WhyJoin from "@/components/home/Contacts";
+import Events from "@/components/home/Events";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <About />
       <WhyJoin />
       <Projects />
+      <Events />
     </>
   );
 };
