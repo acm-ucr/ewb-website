@@ -3,7 +3,7 @@ const CostaRica = () => {
   return (
     <div className="grid grid-cols-3 gap-10 m-28">
       <div className="col-span-2 pb-4">
-        <Subtitle title="General Overview"/>
+        <Subtitle title="General Overview" />
         <div className="ml-2 mt-1">
           In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and
           her organization Biogas Pococi, we are working to implement
@@ -15,10 +15,7 @@ const CostaRica = () => {
         </div>
       </div>
       <div>
-        <img
-          src="/images/CostaRica/CostaRica1.gif"
-          alt="Costa Rica Image 1"
-         />
+        <img src="/images/CostaRica/CostaRica1.gif" alt="Costa Rica Image 1" />
       </div>
 
       <div className="col-span-2 pb-4">
@@ -41,10 +38,7 @@ const CostaRica = () => {
         </div>
       </div>
       <div>
-        <img
-          src="/images/CostaRica/CostaRica2.gif"
-          alt="Costa Rica Image 2"
-        />
+        <img src="/images/CostaRica/CostaRica2.gif" alt="Costa Rica Image 2" />
       </div>
 
       <div className="col-span-3 pb-4">
@@ -69,7 +63,7 @@ const CostaRica = () => {
             </li>
             <li>
               A water treatment system will also be implemented, to learn more
-              check out the {" "}
+              check out the{" "}
               <a
                 href="water-quality-and-filtration"
                 className="text-ewb-blue-200 font-bold hover:text-ewb-green"
