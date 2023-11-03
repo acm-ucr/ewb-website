@@ -10,7 +10,10 @@ const Home = () => {
       <About />
       <WhyJoin />
       <Projects />
-      <Subtitle />
+      <Subtitle
+        title="Motivation"
+        descripton="  Rural communities are already disadvantaged socioeconomically"
+      />
     </>
   );
 };

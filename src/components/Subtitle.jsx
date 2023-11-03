@@ -1,14 +1,13 @@
-import React from "react";
-const Subtitle = ({ title = "| Motivation" }) => {
-  // const Subtitle = ({ title }) => {
-  const blueColor = "#1151D3";
-  const greenColor = "#80C393";
+const Subtitle = ({ title, descripton }) => {
   return (
     <div>
-      <h2 style={{ color: blueColor }}>{title}</h2>
-      <p style={{ color: greenColor }}>
-        Rural communities are already disadvantaged socioeconomically
-      </p>
+      <div className="flex items-center gap-1">
+        <div className="bg-ewb-green h-5 w-1" />
+        <div className="text-ewb-blue-200 text-2xl font-bold">{title}</div>
+      </div>
+      <div className="text-ewb-green font-semibold text-lg ml-2">
+        {descripton}
+      </div>
     </div>
   );
 };
