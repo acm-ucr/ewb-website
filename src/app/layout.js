@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={urbanist.className}>
         <Navigation />
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center mt-16 md:mt-[8vh]">
           {children}
         </div>
         <Footer />

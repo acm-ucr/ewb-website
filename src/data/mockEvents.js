@@ -6,6 +6,7 @@ export const EVENTS = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
     location: "WCH 205",
+    color: "blue",
   },
   {
     start: new Date("October 5, 2023 05:30:00"),
@@ -14,6 +15,7 @@ export const EVENTS = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
     location: "WCH 206",
+    color: "green",
   },
   {
     start: new Date("October 8, 2023 01:30:00"),
@@ -22,5 +24,6 @@ export const EVENTS = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
     location: "WCH 206",
+    color: "blue",
   },
 ];
