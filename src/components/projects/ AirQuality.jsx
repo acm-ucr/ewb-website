@@ -18,7 +18,7 @@ const AirQuality = () => {
       </div>
       <div>
         <img
-          src="/images/airQualitySystem/AirQualitySystem1.webp"
+          src="/images/airQualitySystem/AirQualitySystem1.webp "
           alt="Air Quality System 1"
         />
       </div>
