@@ -1,4 +1,4 @@
-const Subtitle = ({ title, descripton }) => {
+const Subtitle = ({ title, description }) => {
   return (
     <div>
       <div className="flex items-center gap-1">
@@ -6,7 +6,7 @@ const Subtitle = ({ title, descripton }) => {
         <div className="text-ewb-blue-200 text-2xl font-bold">{title}</div>
       </div>
       <div className="text-ewb-green font-semibold text-lg ml-2">
-        {descripton}
+        {description}
       </div>
     </div>
   );
