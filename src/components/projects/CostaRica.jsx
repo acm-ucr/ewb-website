@@ -63,7 +63,7 @@ const CostaRica = () => {
             </li>
             <li>
               A water treatment system will also be implemented, to learn more
-              check out the{" "}
+              check out the
               <a
                 href="water-quality-and-filtration"
                 className="text-ewb-blue-200 font-bold hover:text-ewb-green"
