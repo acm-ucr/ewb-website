@@ -2,8 +2,8 @@ import React from "react";
 import Subtitle from "../Subtitle";
 const AirQuality = () => {
   return (
-    <div className="grid grid-cols-3 gap-10 m-28 justify-around">
-      <div className="col-span-2 pb-4 ">
+    <div className="grid grid-cols-3 gap-10 m-28 justify-around ">
+      <div className="col-span-2 pb-4 w-5/6 ">
         <Subtitle title="General Overview"></Subtitle>
         <p className="ml-2 mt-1">
           Air quality has overtime deteriorated due to developing countries
@@ -23,7 +23,7 @@ const AirQuality = () => {
         />
       </div>
 
-      <div className="col-span-2 col-start-0 bg-white mb-2 ">
+      <div className="col-span-2 col-start-0 bg-white mb-2 w-5/6 ">
         <Subtitle title="Motivation"></Subtitle>
         <ul
           className="marker:text-ewb-blue-200 ml-4"
@@ -50,7 +50,7 @@ const AirQuality = () => {
         />
       </div>
 
-      <div className="col-span-2 col-start-1 bg-white mb-2  ">
+      <div className="col-span-2 col-start-1 bg-white mb-2 w-5/6 ">
         <Subtitle title="Micro Controller"></Subtitle>
         <ul
           className="marker:text-ewb-blue-200 ml-4"
