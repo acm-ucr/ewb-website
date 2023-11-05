@@ -1,26 +1,32 @@
 export const PROJECTS = [
   {
-    start: new Date("October 2, 2023 03:30:00"),
-    end: new Date("October 2, 2023 04:30:00"),
-    name: "Event Name",
+    title: "Costa Rica",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    location: "WCH 205",
+      "In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and her organization Biogas Pococi, we are working to implement Biodigestor tanks and micro controlling systems. She has already implemented this system for 38 families! The Biodigestor provides clean fuel without the emission of harmful particulates that has had detrimental impacts on the health of rural inhabitants. The Biodigestor also provides a source of fertilizer for farmers to use.",
+    link: "/projects/costa-rica",
   },
   {
-    start: new Date("October 5, 2023 05:30:00"),
-    end: new Date("October 5, 2023 06:30:00"),
-    name: "Pizza Party",
+    title: "Tanzania",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    location: "WCH 206",
+      "In collaboration with a Civil Developer in Tanzania and the professional chapter of E.W.B in L.A. We are looking to install a micro controlled solar water pump system for a school, of 400+, in Tanzania. Currently students have to make themselves down a treacherous path of around 300 meters. This takes time out of their studies and puts their health and safety at risk!",
+    link: "/projects/tanzania",
   },
   {
-    start: new Date("October 8, 2023 01:30:00"),
-    end: new Date("October 8, 2023 02:30:00"),
-    name: "Boba Party",
+    title: "Water Quality and Filtration",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    location: "WCH 206",
+      "Water is one of the most imperative substances to life. With an ever increasing population, there will need to be more sources of water to be treated and tested. This however is not so easy in developing countries, as time and resources may be scarce. That is why a need for a water quality and filtration system that is affordable and easily implemented is needed.",
+    link: "/projects/water-quality-and-filtration",
+  },
+  {
+    title: "Robotics Project",
+    description:
+      "In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and her organization Biogas Pococi, we are working to implement Biodigestor tanks and micro controlling systems. She has already implemented this system for 38 families! The Biodigestor provides clean fuel without the emission of harmful particulates that has had detrimental impacts on the health of rural inhabitants. The Biodigestor also provides a source of fertilizer for farmers to use.",
+    link: "/projects/robotics",
+  },
+  {
+    title: "Air Quality System",
+    description:
+      "In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and her organization Biogas Pococi, we are working to implement Biodigestor tanks and micro controlling systems. She has already implemented this system for 38 families! The Biodigestor provides clean fuel without the emission of harmful particulates that has had detrimental impacts on the health of rural inhabitants. The Biodigestor also provides a source of fertilizer for farmers to use.",
+    link: "/projects/air-quality-system",
   },
 ];
