@@ -18,7 +18,7 @@ const Event = ({ start, end, location, name, descripton, color }) => {
       <div className="p-3 w-5/6 text-ewb-black ">
         <div className={`text-2xl ${COLORS[color].text}`}>{name}</div>
         <div className="text-base">{location}</div>
-        <div className="text-sm sm:text-base font-normal">{descripton}</div>
+        <div className="text-sm md:text-base font-normal">{descripton}</div>
       </div>
     </div>
   );
