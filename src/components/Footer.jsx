@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="w-full bg-ewb-blue-200 border-t-[20px] border-t-ewb-green pt-32 flex justify-between">
       <div className="flex items-end m-3 gap-3 text-white font-bold text-xl w-1/2">
         <Image src={whiteLogo} alt="EWB Logo" />
-        <p className="text-lg">EWB at UCR</p>
+        <p className="text-xs md:text-lg">EWB at UCR</p>
       </div>
 
       <div className="text-right text-white text-sm flex flex-col m-0 p-0 mx-4 w-1/2">
