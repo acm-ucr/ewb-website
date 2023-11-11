@@ -2,10 +2,14 @@ import Title from "../Title";
 
 const Header = ({ img, title }) => {
   return (
-    <div className="w-full">
-      <img src={img} alt="Image" className="mb-3 w-full object-cover" />
+    <>
+      <img
+        src={img}
+        alt="Image"
+        className="mb-5 w-full object-cover aspect-[16/5]"
+      />
       <Title subTitle="" title={title} />
-    </div>
+    </>
   );
 };
 
