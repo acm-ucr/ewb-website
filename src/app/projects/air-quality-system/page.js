@@ -1,5 +1,11 @@
+import React from "react";
+import AirQuality from "@/components/projects/ AirQuality";
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <AirQuality />
+    </>
+  );
 };
 
 export default page;
