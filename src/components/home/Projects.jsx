@@ -23,15 +23,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-// import Social from "./Social";
-// const Join = () => {
-//   return (
-//     <div className="p-10 flex flex-col gap-y-8">
-//
-//       <Social />
-//     </div>
-//   );
-// };
-
-// export default Join;
