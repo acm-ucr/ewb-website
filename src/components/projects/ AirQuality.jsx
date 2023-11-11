@@ -1,11 +1,14 @@
-import React from "react";
 import Subtitle from "../Subtitle";
+import img1 from "../../../public/images/airQualitySystem/AirQualitySystem1.webp";
+import img2 from "../../../public/images/airQualitySystem/AirQualitySystem2.webp";
+import img3 from "../../../public/images/airQualitySystem/AirQualitySystem3.gif";
+
 const AirQuality = () => {
   return (
-    <div className="grid grid-cols-3 gap-10 m-28 justify-around ">
-      <div className="col-span-2 pb-4 w-5/6 ">
-        <Subtitle title="General Overview"></Subtitle>
-        <p className="ml-2 mt-1">
+    <div className="grid grid-cols-3 gap-10 my-16 justify-around w-10/12 md:w-9/12">
+      <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
+        <Subtitle title="General Overview" />
+        <p className="mt-1 text-justify">
           Air quality has overtime deteriorated due to developing countries
           industrialization. This has in turn put the health of population in
           risk of respiratory disorders, cardiovascular diseases and
@@ -16,15 +19,13 @@ const AirQuality = () => {
           the air.
         </p>
       </div>
-      <div>
-        <img
-          src="/images/airQualitySystem/AirQualitySystem1.webp "
-          alt="Air Quality System 1"
-        />
-      </div>
-
-      <div className="col-span-2 col-start-0 bg-white mb-2 w-5/6 ">
-        <Subtitle title="Motivation"></Subtitle>
+      <img
+        src={img1.src}
+        alt="Air Quality System 1"
+        className="col-span-3 md:col-span-1"
+      />
+      <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
+        <Subtitle title="Motivation" />
         <ul
           className="marker:text-ewb-blue-200 ml-4"
           style={{ listStyleType: "square" }}
@@ -43,15 +44,14 @@ const AirQuality = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <img
-          src="/images/airQualitySystem/AirQualitySystem2.webp"
-          alt="Air Quality System 2"
-        />
-      </div>
+      <img
+        src={img2.src}
+        alt="Air Quality System 2"
+        className="col-span-3 md:col-span-1"
+      />
 
-      <div className="col-span-2 col-start-1 bg-white mb-2 w-5/6 ">
-        <Subtitle title="Micro Controller"></Subtitle>
+      <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
+        <Subtitle title="Micro Controller" />
         <ul
           className="marker:text-ewb-blue-200 ml-4"
           style={{ listStyleType: "square" }}
@@ -70,12 +70,11 @@ const AirQuality = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <img
-          src="/images/airQualitySystem/AirQualitySystem3.gif"
-          alt="Air Quality System 3"
-        />
-      </div>
+      <img
+        src={img3.src}
+        alt="Air Quality System 3"
+        className="col-span-3 md:col-span-1"
+      />
     </div>
   );
 };
