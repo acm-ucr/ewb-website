@@ -46,7 +46,7 @@ const Navigation = () => {
                     <span
                       className={`hover:cursor-pointer rounded-full mb-0 py-1 px-4 no-underline !text-black text-lg whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
                         selected === item.name &&
-                        "!bg-ewb-blue-200 rounded-full text-white hover:!text-white"
+                        "!bg-ewb-blue-200 rounded-full !text-white hover:!text-white"
                       }`}
                     >
                       {item.name}
@@ -71,7 +71,7 @@ const Navigation = () => {
                   onClick={() => setSelected(item.name)}
                   className={`hover:cursor-pointer rounded-full mb-0 py-0 px-4 no-underline !text-black text-lg whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
                     selected === item.name &&
-                    "!bg-ewb-blue-200 rounded-full text-white hover:!text-white"
+                    "!bg-ewb-blue-200 rounded-full !text-white hover:!text-white"
                   }`}
                 >
                   {item.name}

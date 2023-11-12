@@ -2,14 +2,14 @@ import ArrowLink from "../ArrowLink.jsx";
 
 const Project = ({ name, description, link }) => {
   return (
-    <div className="bg-ewb-blue-100 w-1/4">
-      <div className="text-ewb-blue-200 text-4xl font-bold underline underline-offset-8 decoration-ewb-green text-center pt-4">
+    <div className="bg-ewb-blue-100 w-full h-full md:last:translate-x-1/2 flex flex-col justify-between p-4 items-center">
+      <div className="text-ewb-blue-200 text-lg md:text-2xl font-bold underline underline-offset-8 decoration-ewb-green text-center">
         {name}
       </div>
-      <div className="pt-6 pb-6 px-14 text-center text-lg">{description}</div>
-      <div className="flex items-center justify-center text-blue-800 font-bold pb-2 text-xl">
-        <ArrowLink text="learn more" link="{link}" />
+      <div className="py-6 px-4 text-center text-xs md:text-base">
+        {description}
       </div>
+      <ArrowLink text="learn more" link={link} />
     </div>
   );
 };

@@ -4,7 +4,7 @@ const ArrowLink = ({ text, link }) => {
   return (
     <Link
       href={link}
-      className="no-underline text-ewb-blue-200 hover:text-ewb-blue-200 flex items-center hover:-translate-y-0.5 duration-300"
+      className="no-underline text-ewb-blue-200 hover:text-ewb-blue-200 flex items-center hover:-translate-y-0.5 duration-300 text-lg"
     >
       {text} <BiRightArrowAlt />
     </Link>
