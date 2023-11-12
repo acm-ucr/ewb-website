@@ -4,10 +4,9 @@ import Project from "@/components/home/Project";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="flex flex-col w-11/12 md:w-7/12">
       <Title subTitle="LEARN FROM EXPERIENCE" title="OUR PROJECTS" />
-      <br />
-      <div className="flex flex-wrap items-center justify-center gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
         {PROJECTS.map((project, index) => (
           <Project
             key={index}
@@ -17,7 +16,6 @@ const Projects = () => {
           />
         ))}
       </div>
-      <br />
     </div>
   );
 };
