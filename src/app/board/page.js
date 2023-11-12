@@ -1,10 +1,9 @@
 import { BOARD } from "../../data/mockBoard";
 import Board from "../../components/board/Board";
-import Row from "react-bootstrap/Row";
 
 const page = () => {
   return (
-    <Row className="my-6  flex w-8/12 ">
+    <div className="grid grid-cols-4 w-9/12 gap-8">
       {BOARD.map((item, index) => (
         <Board
           key={index}
@@ -17,7 +16,7 @@ const page = () => {
           picture={item.picture}
         />
       ))}
-    </Row>
+    </div>
   );
 };
 
