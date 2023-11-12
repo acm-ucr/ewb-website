@@ -17,7 +17,6 @@ const page = () => {
             major={item.major}
             links={item.links}
             pronouns={item.pronouns}
-            picture={item.picture}
           />
         ))}
       </div>
