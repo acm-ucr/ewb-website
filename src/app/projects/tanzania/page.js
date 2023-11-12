@@ -1,7 +1,14 @@
-import React from "react";
+import Tanzania from "@/components/projects/Tanzania";
+import Header from "@/components/projects/Header";
+import header from "../../../../public/images/tanzania/tanzaniaHeader.webp";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <Header img={header.src} title="Project" />
+      <Tanzania />
+    </>
+  );
 };
 
 export default page;
