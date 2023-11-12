@@ -1,4 +1,4 @@
-import board from "../../public/images/image 11.png";
+import board from "../../public/images/landing.webp";
 export const BOARD = [
   {
     name: "Evan Littlecat",
