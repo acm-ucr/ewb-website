@@ -8,7 +8,7 @@ import Link from "next/link";
 const Board = ({ name, position, grade, major, links, pronouns, picture }) => {
   return (
     <Col className="flex items-center justify-center">
-      <div className="w-[270px] h-[450px] bg-gray-200 flex items-start justify-center my-3 shadow-[12px_-12px_0px_0px] shadow-ewb-green">
+      <div className="w-[270px] h-[450px] bg-gray-200 flex items-start justify-center my-14 shadow-[12px_-12px_0px_0px] shadow-ewb-green">
         <Image src={picture} className=" w-10/12 object-cover my-4" />
         <div className="font-medium text-ewb-blue-200  -translate-x-6 absolute my-[246px] text-3xl ">
           {name}
