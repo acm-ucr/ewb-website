@@ -17,15 +17,15 @@ const Navigation = () => {
       collapseOnSelect
       expand="md"
       fixed="top"
-      className="w-full h-16 md:h-[8vh] flex pb-10 font-playfair !bg-white justify-between items-center"
+      className="w-full m-0 md:h-[8vh] p-0 flex px-3 py-4 !bg-white justify-between items-center"
     >
-      <Navbar.Brand className="p-0 h-full">
+      <Navbar.Brand className="p-0 min-h-full">
         <Link
           onClick={() => setSelected("")}
           href="/"
-          className="items-center flex ml-3 h-full"
+          className="items-center flex min-h-full"
         >
-          <Image src={blueLogo} className="h-full" />
+          <Image src={blueLogo} className="h-full p-2" />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -34,8 +34,8 @@ const Navigation = () => {
       >
         <FaBars className="text-ewb-blue-200 text-xl" />
       </Navbar.Toggle>
-      <Navbar.Collapse className="items-center md:justify-end justify-center">
-        <Nav className="mb-2 no-underline text-lg flex items-center gap-2 mr-4">
+      <Navbar.Collapse className="items-center md:justify-end justify-center h-full">
+        <Nav className="mb-2 no-underline text-lg flex items-center gap-2 mr-4 h-full">
           {navigation.map((item, index) => (
             <div key={index}>
               {item.sub.length > 0 ? (
@@ -46,7 +46,7 @@ const Navigation = () => {
                     <span
                       className={`hover:cursor-pointer rounded-full mb-0 py-1 px-4 no-underline !text-black text-lg whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
                         selected === item.name &&
-                        "!bg-ewb-blue-200 rounded-full text-white hover:!text-white"
+                        "!bg-ewb-blue-200 rounded-full !text-white hover:!text-white"
                       }`}
                     >
                       {item.name}
@@ -71,7 +71,7 @@ const Navigation = () => {
                   onClick={() => setSelected(item.name)}
                   className={`hover:cursor-pointer rounded-full mb-0 py-0 px-4 no-underline !text-black text-lg whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
                     selected === item.name &&
-                    "!bg-ewb-blue-200 rounded-full text-white hover:!text-white"
+                    "!bg-ewb-blue-200 rounded-full !text-white hover:!text-white"
                   }`}
                 >
                   {item.name}
