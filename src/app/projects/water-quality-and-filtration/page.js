@@ -1,5 +1,11 @@
+import WaterQuality from "@/components/projects/WaterQuality";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <WaterQuality />
+    </>
+  );
 };
 
 export default page;
