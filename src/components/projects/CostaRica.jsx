@@ -1,8 +1,11 @@
 import Subtitle from "../Subtitle";
+import img1 from "../../../public/images/costaRica/CostaRica1.gif";
+import img2 from "../../../public/images/costaRica/CostaRica2.gif";
+
 const CostaRica = () => {
   return (
-    <div className="grid grid-cols-3 gap-10 m-28">
-      <div className="col-span-2 pb-4">
+    <div className="grid grid-cols-3 gap-10 my-16 justify-around w-10/12 md:w-9/12">
+      <div className="col-span-3 md:col-span-2 pb-4">
         <Subtitle title="General Overview" />
         <div className="ml-2 mt-1">
           In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and
@@ -14,11 +17,14 @@ const CostaRica = () => {
           Biodigestor also provides a source of fertilizer for farmers to use.
         </div>
       </div>
-      <div>
-        <img src="/images/CostaRica/CostaRica1.gif" alt="Costa Rica Image 1" />
-      </div>
 
-      <div className="col-span-2 pb-4">
+      <img
+        src={img1.src}
+        alt="Costa Rica Image 1"
+        className="col-span-3 md:col-span-1"
+      />
+
+      <div className="col-span-3 md:col-span-2 pb-4">
         <Subtitle
           title="Motivation"
           description="Rural communities are already disadvantaged socioeconomically"
@@ -37,9 +43,12 @@ const CostaRica = () => {
           </ul>
         </div>
       </div>
-      <div>
-        <img src="/images/CostaRica/CostaRica2.gif" alt="Costa Rica Image 2" />
-      </div>
+
+      <img
+        src={img2.src}
+        alt="Costa Rica Image 2"
+        className="col-span-3 md:col-span-1"
+      />
 
       <div className="col-span-3 pb-4">
         <Subtitle
