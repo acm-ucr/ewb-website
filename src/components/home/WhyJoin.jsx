@@ -6,11 +6,7 @@ const WhyJoin = () => {
   return (
     <div className="py-16 w-11/12 flex flex-col items-center">
       <div className="absolute w-1/3 aspect-square bg-ewb-blue-100/40 rounded-full -translate-y-14" />
-      <Title
-        className="z-20"
-        subTitle="GET INVOLVED AND MAKE AN IMPACT!"
-        title="WHY JOIN EWB"
-      />
+      <Title subTitle="GET INVOLVED AND MAKE AN IMPACT!" title="WHY JOIN EWB" />
       <div className="relative text-center pt-12 w-1/2">
         Engineers Without Borders at UCR currently hosts several projects,
         professional development events, and club activities for members to
