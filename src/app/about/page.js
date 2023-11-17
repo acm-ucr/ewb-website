@@ -1,5 +1,11 @@
+import React from "react";
+import About from "@/components/home/About.jsx";
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <About />
+    </>
+  );
 };
 
 export default page;
