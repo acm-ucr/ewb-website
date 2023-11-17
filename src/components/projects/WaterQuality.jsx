@@ -22,7 +22,7 @@ const WaterQuality = () => {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-      ></iframe>
+      />
       <div className="col-span-2 pb-4">
         <Subtitle title="Motivation" descripton="Water Quality System" />
         <p className="ml-2 mt-1">
