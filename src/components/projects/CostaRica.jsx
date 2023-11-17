@@ -1,4 +1,7 @@
 import Subtitle from "../Subtitle";
+import img1 from "../../../public/images/costaRica/CostaRica1.gif";
+import img2 from "../../../public/images/costaRica/costaRica2.gif";
+
 const CostaRica = () => {
   return (
     <div className="grid grid-cols-3 gap-10 my-16 justify-around w-10/12 md:w-9/12">
@@ -16,7 +19,7 @@ const CostaRica = () => {
       </div>
 
       <img
-        src="/images/CostaRica/CostaRica1.gif"
+        src={img1.src}
         alt="Costa Rica Image 1"
         className="col-span-3 md:col-span-1"
       />
@@ -42,7 +45,7 @@ const CostaRica = () => {
       </div>
 
       <img
-        src="/images/CostaRica/CostaRica2.gif"
+        src={img2.src}
         alt="Costa Rica Image 2"
         className="col-span-3 md:col-span-1"
       />
