@@ -1,6 +1,6 @@
 import Subtitle from "../Subtitle";
 import img1 from "../../../public/images/costaRica/CostaRica1.gif";
-import img2 from "../../../public/images/costaRica/costaRica2.gif";
+import img2 from "../../../public/images/costaRica/CostaRica2.gif";
 
 const CostaRica = () => {
   return (
