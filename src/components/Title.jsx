@@ -1,8 +1,21 @@
+"use client";
 import { COLORS } from "../data/colors";
+import { motion } from "framer-motion";
+
 const Title = ({ subTitle, title }) => {
   const titleWords = title.split(" ");
   return (
-    <div className="relative flex flex-col justify-center items-center">
+    <motion.div
+      initial={{ y: -10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        type: "tween",
+        ease: "easeInOut",
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="relative flex flex-col justify-center items-center"
+    >
       <p className={COLORS.green.text + " font-semibold mb-0"}>{subTitle}</p>
       <p className="mt-0 font-bold text-2xl md:text-3xl">
         <span
@@ -17,7 +30,7 @@ const Title = ({ subTitle, title }) => {
           {titleWords.slice(1).join(" ")}
         </span>
       </p>
-    </div>
+    </motion.div>
   );
 };
 

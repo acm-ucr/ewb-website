@@ -1,6 +1,7 @@
+"use client";
 import ArrowLink from "../ArrowLink.jsx";
 
-const Project = ({ name, description, link }) => {
+const Project = ({ name, description, link, index }) => {
   return (
     <div className="bg-ewb-blue-100 w-full h-full md:last:translate-x-1/2 flex flex-col justify-between p-4 items-center">
       <div className="text-ewb-blue-200 text-lg md:text-2xl font-bold underline underline-offset-8 decoration-ewb-green text-center">
