@@ -1,5 +1,10 @@
+import Robotics from "@/components/projects/Robotics";
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <Robotics />
+    </>
+  );
 };
 
 export default page;
