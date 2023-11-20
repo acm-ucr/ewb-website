@@ -2,6 +2,7 @@ import Title from "../Title";
 import { FOCUS } from "@/data/focus";
 import Focus from "./Focus";
 import Picture from "../Picture";
+import img1 from "../../../public/images/whyJoin.webp";
 const WhyJoin = () => {
   return (
     <div className="py-16 w-11/12 flex flex-col items-center">
@@ -27,7 +28,7 @@ const WhyJoin = () => {
           />
         ))}
       </div>
-      <Picture picture="/images/CostaRica/CostaRica1.gif" />
+      <Picture picture={img1.src} />
     </div>
   );
 };
