@@ -5,7 +5,7 @@ import Picture from "../Picture";
 import img1 from "../../../public/images/whyJoin.webp";
 const WhyJoin = () => {
   return (
-    <div className="w-10/12 md:w-1/2 flex flex-col items-center gap-10">
+    <div className="w-10/12 md:w-2/3  lg:w-1/2 flex flex-col items-center gap-10">
       <div className="absolute w-1/3 aspect-square bg-ewb-blue-100/40 rounded-full -translate-y-14" />
       <Title subTitle="GET INVOLVED AND MAKE AN IMPACT!" title="WHY JOIN EWB" />
       <div className="relative text-center w-full">
