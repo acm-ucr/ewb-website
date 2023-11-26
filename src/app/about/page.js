@@ -1,19 +1,19 @@
-import Title from "../Title";
-import Subtitle from "../Subtitle";
+import Title from "@/components/Title";
+import Subtitle from "@/components/Subtitle";
+import logo from "../../../public/assets/fullLogo.webp";
+import img1 from "../../../public/images/AboutPic1.webp";
+import img2 from "../../../public/images/AboutPic2.webp";
 
 const page = () => {
   return (
-    <div className="p-56 mx-96 flex flex-col items-center">
-      <div className="text-center">
-        <Title subTitle="LEARN WHO WE ARE" title="ABOUT US"></Title>
-      </div>
-
+    <div className="py-20 w-10/12 md:w-1/2 flex flex-col items-center gap-3">
+      <Title subTitle="LEARN WHO WE ARE" title="ABOUT US" />
       <img
-        className="my-4 flex justify-center mx-auto"
-        src={"assets/fullLogo.webp"}
+        className="w-full"
+        src={logo.src}
         alt="Engineers Without Borders Logo"
       />
-      <div className="text-justify  col-span-3 items-center">
+      <div className="text-justify">
         Founded in 2007, the University of California, Riverside Chapter of
         Engineers Without Borders is part of the Inland Empire Chapter (EWB-IE,
         along with Cal Poly Pomona and the Inland Empire professional chapter).
@@ -21,13 +21,11 @@ const page = () => {
         any community across the world that needs our technical expertise.
       </div>
       <img
-        className="my-4 flex justify-center"
-        src={"images/AboutPic1.webp"}
+        className="my-2 w-full"
+        src={img1.src}
         alt="Community of Riverside"
       />
-      <div className="w-full text-left my-3">
-        <Subtitle title="OVERVIEW"></Subtitle>
-      </div>
+      <Subtitle title="OVERVIEW" beginning={true} />
       <div className="text-justify items-center">
         The student members in the Engineers Without Borders Student Chapter at
         the University of California, Riverside recognize that we are privileged
@@ -39,10 +37,7 @@ const page = () => {
         not focus on a specific engineering major but encourage all people
         regardless of gender identity, religion, and background.
       </div>
-      <img
-        className="my-24 flex justify-center "
-        src={"images/AboutPic2.webp"}
-      />
+      <img className="my-2 w-full" src={img2.src} />
     </div>
   );
 };
