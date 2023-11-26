@@ -6,7 +6,7 @@ import img2 from "../../../public/images/AboutPic2.webp";
 
 const page = () => {
   return (
-    <div className="py-20 w-10/12 md:w-1/2 flex flex-col items-center gap-3">
+    <div className="py-20 w-10/12 md:w-2/3  lg:w-1/2 flex flex-col items-center gap-3">
       <Title subTitle="LEARN WHO WE ARE" title="ABOUT US" />
       <img
         className="w-full"
