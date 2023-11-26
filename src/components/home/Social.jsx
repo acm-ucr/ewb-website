@@ -5,7 +5,7 @@ import { LINKS } from "@/data/links";
 
 const Social = () => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row relative">
       {LINKS.map((social, index) => (
         <Link
           key={index}

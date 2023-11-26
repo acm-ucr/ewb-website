@@ -5,10 +5,10 @@ import Picture from "../Picture";
 import img1 from "../../../public/images/whyJoin.webp";
 const WhyJoin = () => {
   return (
-    <div className="py-16 w-11/12 flex flex-col items-center">
+    <div className="w-10/12 md:w-1/2 flex flex-col items-center gap-10">
       <div className="absolute w-1/3 aspect-square bg-ewb-blue-100/40 rounded-full -translate-y-14" />
       <Title subTitle="GET INVOLVED AND MAKE AN IMPACT!" title="WHY JOIN EWB" />
-      <div className="relative text-center pt-12 w-1/2">
+      <div className="relative text-center w-full">
         Engineers Without Borders at UCR currently hosts several projects,
         professional development events, and club activities for members to
         actively participate in. We highly encourage all students to broaden
@@ -16,7 +16,7 @@ const WhyJoin = () => {
         activities. We hope that through these activities, students will grow as
         skilled professionals and leaders.
       </div>
-      <div className="grid grid-cols-2 gap-4 my-12 w-2/4">
+      <div className="grid grid-cols-2 gap-4 w-full">
         {FOCUS.map((focus, index) => (
           <Focus
             index={index}
