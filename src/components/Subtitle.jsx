@@ -1,6 +1,6 @@
-const Subtitle = ({ title, description }) => {
+const Subtitle = ({ title, description, beginning }) => {
   return (
-    <div>
+    <div className={`${beginning && "self-start"}`}>
       <div className="flex items-center gap-1">
         <div className="bg-ewb-green h-5 w-1" />
         <div className="text-ewb-blue-200 text-xl md:text-2xl font-bold">
