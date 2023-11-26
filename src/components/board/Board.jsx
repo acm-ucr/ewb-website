@@ -11,7 +11,7 @@ const Board = ({ name, position, grade, major, links, pronouns, picture }) => {
           <Link
             key={index}
             href={link}
-            className="text-2xl text-ewb-blue-200 hover:text-ewb-green"
+            className="text-2xl text-ewb-blue-200 hover:text-ewb-green duration-200"
           >
             {ICONS[icon]}
           </Link>

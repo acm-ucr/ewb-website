@@ -14,7 +14,7 @@ const Title = ({ subTitle, title }) => {
         duration: 0.5,
         delay: 0.1,
       }}
-      className="relative flex flex-col justify-center items-center"
+      className="relative flex flex-col justify-center items-center z-20"
     >
       <p className={COLORS.green.text + " font-semibold mb-0"}>{subTitle}</p>
       <p className="mt-0 font-bold text-2xl md:text-3xl">

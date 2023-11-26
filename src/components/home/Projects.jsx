@@ -4,9 +4,10 @@ import Project from "@/components/home/Project";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col w-11/12 md:w-7/12">
+    <div className="w-10/12 md:w-1/2 flex flex-col items-center gap-10">
+      <div className="absolute w-1/3 aspect-square bg-ewb-blue-100/40 rounded-full -translate-y-14" />
       <Title subTitle="LEARN FROM EXPERIENCE" title="OUR PROJECTS" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {PROJECTS.map((project, index) => (
           <Project
             index={index}
