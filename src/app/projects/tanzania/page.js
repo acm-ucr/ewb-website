@@ -5,7 +5,7 @@ import header from "../../../../public/images/tanzania/tanzaniaHeader.webp";
 const page = () => {
   return (
     <>
-      <Header img={header.src} title="Project" />
+      <Header img={header.src} title="Tanzania Project" />
       <Tanzania />
     </>
   );
