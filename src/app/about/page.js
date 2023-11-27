@@ -1,4 +1,5 @@
 import Title from "@/components/Title";
+import Picture from "@/components/Picture";
 import Subtitle from "@/components/Subtitle";
 import logo from "../../../public/assets/fullLogo.webp";
 import img1 from "../../../public/images/AboutPic1.webp";
@@ -7,26 +8,23 @@ import img2 from "../../../public/images/AboutPic2.webp";
 const page = () => {
   return (
     <div className="py-20 w-10/12 md:w-2/3  lg:w-1/2 flex flex-col items-center gap-3">
+      <div className="absolute w-1/3 aspect-square bg-ewb-blue-100/40 rounded-full -translate-y-14" />
       <Title subTitle="LEARN WHO WE ARE" title="ABOUT US" />
       <img
-        className="w-full"
+        className="w-full relative"
         src={logo.src}
         alt="Engineers Without Borders Logo"
       />
-      <div className="text-justify">
+      <div className="text-justify py-4">
         Founded in 2007, the University of California, Riverside Chapter of
         Engineers Without Borders is part of the Inland Empire Chapter (EWB-IE,
         along with Cal Poly Pomona and the Inland Empire professional chapter).
         We are dedicated to serving the UCR campus, the City of Riverside, and
         any community across the world that needs our technical expertise.
       </div>
-      <img
-        className="my-2 w-full"
-        src={img1.src}
-        alt="Community of Riverside"
-      />
+      <Picture picture={img1.src} />
       <Subtitle title="OVERVIEW" beginning={true} />
-      <div className="text-justify items-center">
+      <div className="text-justify items-center py-4">
         The student members in the Engineers Without Borders Student Chapter at
         the University of California, Riverside recognize that we are privileged
         to live in the U.S. where higher education and healthier living
@@ -37,7 +35,7 @@ const page = () => {
         not focus on a specific engineering major but encourage all people
         regardless of gender identity, religion, and background.
       </div>
-      <img className="my-2 w-full" src={img2.src} />
+      <Picture picture={img2.src} />
     </div>
   );
 };
