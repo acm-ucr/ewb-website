@@ -16,15 +16,17 @@ const WaterQuality = () => {
           implemented is needed.
         </p>
       </div>
-      <iframe
-        width="400"
-        height="230"
-        src="https://www.youtube.com/embed/BCHhwxvQqxg?si=24cjxFngXhooUjca"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      />
+      <div className="col-span-3 md:col-span-1">
+        <iframe
+          width="100%"
+          height="230"
+          src="https://www.youtube.com/embed/BCHhwxvQqxg?si=24cjxFngXhooUjca"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+      </div>
       <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
         <Subtitle title="Motivation" description="Water Quality System" />
         <ul
