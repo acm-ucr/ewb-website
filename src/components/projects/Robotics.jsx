@@ -13,12 +13,8 @@ const Robotics = () => {
           robotics, don&apos;t hesitate to join!
         </p>
       </div>
-      <div>
-        <img
-          src={img1.src}
-          alt="Robotics 1 gif"
-          className="col-span-3 md:col-span-1"
-        />
+      <div className="col-span-3 md:col-span-1">
+        <img src={img1.src} alt="Robotics 1 gif" />
       </div>
 
       <div className="col-span-3 justify-center flex flex-col">
