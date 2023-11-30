@@ -22,7 +22,7 @@ const AirQuality = () => {
       <img
         src={img1.src}
         alt="Air Quality System 1"
-        className="col-span-3 md:col-span-1"
+        className="col-span-3 md:col-span-1 mx-auto"
       />
       <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
         <Subtitle title="Motivation" />
@@ -33,7 +33,7 @@ const AirQuality = () => {
           <li className="mb-2">
             Air quality poses a threat to people all over the world, by
             developing this system; we present a solution that would otherwise
-            be unobtainable to developing communities.
+            be unobtainable to developing communities
           </li>
           <li className="mb-2">
             Make an impact on someone&apos;s life by improving quality of life
@@ -47,7 +47,7 @@ const AirQuality = () => {
       <img
         src={img2.src}
         alt="Air Quality System 2"
-        className="col-span-3 md:col-span-1"
+        className="col-span-3 md:col-span-1 mx-auto"
       />
 
       <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
@@ -58,11 +58,11 @@ const AirQuality = () => {
         >
           <li className="mb-2">
             Gas sensor system will be able to detect a series of contaminants in
-            the are including Ozone, Carbon Monoxide, Methane, and CO2.
+            the are including Ozone, Carbon Monoxide, Methane, and CO2
           </li>
           <li className="mb-2">
             Ventilation system will be controlled by gas sensing micro
-            controller to maximize power and filter life.
+            controller to maximize power and filter life
           </li>
           <li className="mb-2">
             Gas Sensing unit will be able to alert user and recommend proper
@@ -73,7 +73,7 @@ const AirQuality = () => {
       <img
         src={img3.src}
         alt="Air Quality System 3"
-        className="col-span-3 md:col-span-1"
+        className="col-span-3 md:col-span-1 mx-auto"
       />
     </div>
   );

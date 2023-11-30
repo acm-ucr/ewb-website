@@ -53,21 +53,21 @@ const Robotics = () => {
           <li className="mb-2">
             By learning robotics, you are inherently learning how to work with a
             micro controller. A device that allows you to do so many things, as
-            can be seen in the other pages of this website.
+            can be seen in the other pages of this website
           </li>
           <li className="mb-2">
             The use of a micro controller allows for a cheap and effective way
             to communicate with devices. It allows us to construct specialized
-            systems.
+            systems
           </li>
           <li className="mb-2">
             Micro controllers allow for adaptations to be made to the system
             whenever needed. This provides flexibility that other systems do not
-            have.
+            have
           </li>
           <li className="mb-2">
             We can also create interfaces that make it easier for the user to
-            interact with.
+            interact with
           </li>
         </ul>
       </div>
