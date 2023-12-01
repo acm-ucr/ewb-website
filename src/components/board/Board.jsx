@@ -3,7 +3,7 @@ import { ICONS } from "@/data/icons";
 
 const Board = ({ name, position, grade, major, links, pronouns, picture }) => {
   return (
-    <div className="w-full bg-gray-200 my-4 shadow-[12px_-12px_0px_0px] shadow-ewb-green p-4">
+    <div className="w-full bg-gray-200 shadow-[12px_-12px_0px_0px] shadow-ewb-green p-4">
       <div className="font-semibold text-ewb-blue-200 text-2xl">{name}</div>
       <div className="font-light text-lg">{position}</div>
       <div className="flex gap-2">
@@ -11,7 +11,7 @@ const Board = ({ name, position, grade, major, links, pronouns, picture }) => {
           <Link
             key={index}
             href={link}
-            className="text-2xl text-ewb-blue-200 hover:text-ewb-green"
+            className="text-2xl text-ewb-blue-200 hover:text-ewb-green duration-200"
           >
             {ICONS[icon]}
           </Link>

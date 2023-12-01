@@ -2,8 +2,8 @@ import Subtitle from "../Subtitle";
 
 const Tanzania = () => {
   return (
-    <div className="grid grid-cols-3 gap-10 m-28">
-      <div className="col-span-3 p-4">
+    <div className="grid grid-cols-3 gap-10 my-16 justify-around md:w-9/12">
+      <div className="col-span-3 md:col-span-2 pl-4">
         <Subtitle title="General Overview" />
         <div className="ml-2 mt-1">
           In collaboration with a Civil Developer in Tanzania and the
@@ -14,7 +14,7 @@ const Tanzania = () => {
           studies and puts their health and safety at risk!
         </div>
       </div>
-      <div className="col-span-2 p-4">
+      <div className="col-span-3 md:col-span-2 pl-4">
         <Subtitle title="Motivation" />
         <div className="ml-2 mt-1">
           <ul
@@ -33,11 +33,11 @@ const Tanzania = () => {
         </div>
       </div>
       <img
-        className="w-full"
+        className="col-span-3 md:col-span-1 pt-2 md:pt-0 mx-auto"
         src="/images/tanzania/tanzania1.gif"
         alt="image"
       />
-      <div className="col-span-2 p-4">
+      <div className="col-span-3 md:col-span-2 pl-4">
         <Subtitle title="Micro Controlled Solar Water Pump System" />
         <div className="ml-2 mt-1">
           <ul
@@ -58,14 +58,14 @@ const Tanzania = () => {
         </div>
       </div>
       <img
-        className="w-full"
+        className="col-span-3 md:col-span-1 pt-2 md:pt-0 mx-auto"
         src="\images\tanzania\tanzania2.webp"
         alt="image"
       />
-      <div className="col-span-2 p-4">
+      <div className="col-span-3 md:col-span-2 pl-4">
         <Subtitle
-          title="Educational Micro controller projects"
-          description="Education is very hard to obtain affecting isolated rural communities the most"
+          title="Educational Micro Controller Projects"
+          description="Education is very hard to obtain affecting isolated rural communities the most."
         />
         <div className="ml-2 mt-1">
           <ul
@@ -106,7 +106,7 @@ const Tanzania = () => {
         </div>
       </div>
       <img
-        className="w-full"
+        className="col-span-3 md:col-span-1 pt-2 md:pt-0 mx-auto"
         src="\images\tanzania\tanzania3.gif"
         alt="image"
       />

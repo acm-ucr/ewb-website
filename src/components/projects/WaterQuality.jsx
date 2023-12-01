@@ -16,15 +16,17 @@ const WaterQuality = () => {
           implemented is needed.
         </p>
       </div>
-      <iframe
-        width="400"
-        height="230"
-        src="https://www.youtube.com/embed/BCHhwxvQqxg?si=24cjxFngXhooUjca"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      />
+      <div className="col-span-3 md:col-span-1">
+        <iframe
+          width="100%"
+          height="230"
+          src="https://www.youtube.com/embed/BCHhwxvQqxg?si=24cjxFngXhooUjca"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+      </div>
       <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
         <Subtitle title="Motivation" description="Water Quality System" />
         <ul
@@ -83,14 +85,14 @@ const WaterQuality = () => {
             check out{" "}
             <a
               href="tanzania"
-              className="text-ewb-blue-200 font-bold hover:text-ewb-green"
+              className="text-ewb-blue-200 underline font-bold hover:text-ewb-green"
             >
               Tanzania
             </a>{" "}
             and{" "}
             <a
               href="costa-rica"
-              className="text-ewb-blue-200 font-bold hover:text-ewb-green"
+              className="text-ewb-blue-200 underline font-bold hover:text-ewb-green"
             >
               Costa Rica
             </a>
@@ -102,12 +104,12 @@ const WaterQuality = () => {
           <li className="mb-2">
             Using a UV system to calculate time needed for water to be exposed
             for maximum power efficiency. By calculating volume of water and
-            level of contamination from feedback from other sensors.
+            level of contamination from feedback from other sensors
           </li>
           <li className="mb-2">
             An automated system is needed to monitor the life of the filter. By
             measuring these parameters, one can confidently know when to replace
-            the filter.
+            the filter
           </li>
         </ul>
       </div>
