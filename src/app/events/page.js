@@ -34,6 +34,13 @@ const EvnetsPage = () => {
               ? new Date(event.start.dateTime)
               : new Date(event.start.date + "T00:00:00-07:00"),
             end: new Date(event.end.dateTime || event.end.date),
+            eventColor: event.description
+              ?.toLowerCase()
+              .startsWith("general meeting")
+              ? "blue-100"
+              : event.description?.toLowerCase().startsWith("social")
+              ? "blue"
+              : "green",
             color: event.description
               ?.toLowerCase()
               .startsWith("general meeting")
@@ -47,10 +54,8 @@ const EvnetsPage = () => {
   }, []);
   return (
     <>
-      <div className="w-10/12">
-        <CalendarEvent events={events} />
-        <EventDescriptions events={events} />
-      </div>
+      <CalendarEvent events={events} />
+      <EventDescriptions events={events} />
     </>
   );
 };
