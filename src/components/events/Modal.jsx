@@ -9,10 +9,10 @@ const Modal = ({ event, setEvent }) => {
         </p>
         <AiOutlinePlus
           onClick={() => setEvent(null)}
-          className="text-black rotate-45 p-0 hover:scale-110 duration-300 hover:cursor-pointer text-3xl m-3"
+          className="text-white rotate-45 p-0 hover:scale-110 duration-300 hover:cursor-pointer text-3xl m-3"
         />
       </div>
-      <div className="p-3 bg-gray-200">
+      <div className="p-3 bg-white">
         <p className="m-0 pl-2">{event.location}</p>
         {event.allDay ? (
           <p>{event.start.toLocaleDateString()}</p>

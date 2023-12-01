@@ -6,6 +6,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import Modal from "./Modal.jsx";
+import CustomHeader from "./CustomHeader.jsx";
 
 const localizer = momentLocalizer(moment);
 
@@ -19,7 +20,7 @@ const CalendarEvent = ({ events }) => {
         <div className="h-[80vh] w-full relative mb-24">
           <Calendar
             date={date}
-            className="w-full m-0 p-0 text-sm md:text-2xl "
+            className="w-full m-0 p-0 !text-sm md:!text-xl 2xl:!text-2xl"
             allDayAccessor="allDay"
             showAllEvents={true}
             events={events}
@@ -29,6 +30,8 @@ const CalendarEvent = ({ events }) => {
             components={{
               event: CustomEvent,
               toolbar: CustomToolbar,
+              header: CustomHeader,
+              eventContainerWrapper: CustomHeader,
             }}
             onNavigate={(newDate) => {
               setDate(newDate);
