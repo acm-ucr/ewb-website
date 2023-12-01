@@ -4,8 +4,8 @@ import img2 from "../../../public/images/costaRica/CostaRica2.gif";
 
 const CostaRica = () => {
   return (
-    <div className="grid grid-cols-3 gap-10 my-16 justify-around w-10/12 md:w-9/12">
-      <div className="col-span-3 md:col-span-2 pb-4">
+    <div className="grid grid-cols-3 gap-10 my-16 justify-around md:w-9/12">
+      <div className="col-span-3 md:col-span-2 pl-4 pb-4">
         <Subtitle title="General Overview" />
         <div className="ml-2 mt-1">
           In collaboration with Claudia Chaves Villarreal, a Ph.D. Candidate and
@@ -21,10 +21,10 @@ const CostaRica = () => {
       <img
         src={img1.src}
         alt="Costa Rica Image 1"
-        className="col-span-3 md:col-span-1"
+        className="col-span-3 md:col-span-1 mx-auto"
       />
 
-      <div className="col-span-3 md:col-span-2 pb-4">
+      <div className="col-span-3 md:col-span-2 pl-4 pb-4">
         <Subtitle
           title="Motivation"
           description="Rural communities are already disadvantaged socioeconomically"
@@ -47,10 +47,10 @@ const CostaRica = () => {
       <img
         src={img2.src}
         alt="Costa Rica Image 2"
-        className="col-span-3 md:col-span-1"
+        className="col-span-3 md:col-span-1 mx-auto"
       />
 
-      <div className="col-span-3 pb-4">
+      <div className="col-span-3 pl-4 pb-4">
         <Subtitle
           title="Educational Micro Controller Projects"
           description="Education is very hard to obtain affecting isolated rural communities the most"
@@ -72,10 +72,10 @@ const CostaRica = () => {
             </li>
             <li>
               A water treatment system will also be implemented, to learn more
-              check out the
+              check out the{" "}
               <a
                 href="water-quality-and-filtration"
-                className="text-ewb-blue-200 font-bold hover:text-ewb-green"
+                className="text-ewb-blue-200 font-bold underline hover:text-ewb-green"
               >
                 water quality and filtration
               </a>

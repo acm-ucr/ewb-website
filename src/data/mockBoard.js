@@ -8,6 +8,14 @@ export const BOARD = [
     pronouns: "He/Him",
   },
   {
+    name: "Win Thant Tin Han",
+    position: "Vice President",
+    links: {},
+    grade: "3rd Year",
+    major: "Computer Science",
+    pronouns: "He/him/his",
+  },
+  {
     name: "Leslie Kin",
     position: "Webmaster & Social Media",
     links: {
@@ -18,47 +26,22 @@ export const BOARD = [
     pronouns: "She/Her/Hers",
   },
   {
-    name: "Evan Littlecat",
-    position: "President",
-    links: {
-      email: "mailto:email@gmail.com",
-      linkedin: "mailto:email@gmail.com",
-    },
-    grade: "Sophmore",
-    major: "Comp Sci",
-    pronouns: "She/Her/Hers",
+    name: "Jacob Mapa",
+    position: "Treasurer",
+    links: {},
+    grade: "3rd Year",
+    major: "Bioengineering",
+    pronouns: "He/Hi/Hiss",
   },
   {
-    name: "Evan Littlecat",
-    position: "President",
+    name: "Dhruv Kanumury ",
+    position: "Secretary and Outreach Chair",
     links: {
       email: "mailto:email@gmail.com",
       linkedin: "mailto:email@gmail.com",
     },
-    grade: "Sophmore",
-    major: "Comp Sci",
-    pronouns: "She/Her/Hers",
-  },
-  {
-    name: "Evan Littlecat",
-    position: "President",
-    links: {
-      email: "mailto:email@gmail.com",
-      linkedin: "mailto:email@gmail.com",
-    },
-    grade: "Sophmore",
-    major: "Comp Sci",
-    pronouns: "She/Her/Hers",
-  },
-  {
-    name: "Evan Littlecat",
-    position: "President",
-    links: {
-      email: "mailto:email@gmail.com",
-      linkedin: "mailto:email@gmail.com",
-    },
-    grade: "Sophmore",
-    major: "Comp Sci",
-    pronouns: "She/Her/Hers",
+    grade: "3rd Year ",
+    major: "Bioengineering",
+    pronouns: "He/Him/His",
   },
 ];
