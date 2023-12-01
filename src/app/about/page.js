@@ -7,7 +7,7 @@ import img2 from "../../../public/images/AboutPic2.webp";
 
 const page = () => {
   return (
-    <div className="py-20 w-10/12 md:w-2/3  lg:w-1/2 flex flex-col items-center gap-3">
+    <div className="py-20 w-10/12 md:w-2/3  lg:w-1/2 flex flex-col items-center gap-8">
       <div className="absolute w-1/3 aspect-square bg-ewb-blue-100/40 rounded-full -translate-y-14" />
       <Title subTitle="LEARN WHO WE ARE" title="ABOUT US" />
       <img
@@ -15,7 +15,7 @@ const page = () => {
         src={logo.src}
         alt="Engineers Without Borders Logo"
       />
-      <div className="text-justify py-4">
+      <div className="text-justify mb-4">
         Founded in 2007, the University of California, Riverside Chapter of
         Engineers Without Borders is part of the Inland Empire Chapter (EWB-IE,
         along with Cal Poly Pomona and the Inland Empire professional chapter).
@@ -24,7 +24,7 @@ const page = () => {
       </div>
       <Picture picture={img1.src} />
       <Subtitle title="OVERVIEW" beginning={true} />
-      <div className="text-justify items-center py-4">
+      <div className="text-justify mb-4 items-center">
         The student members in the Engineers Without Borders Student Chapter at
         the University of California, Riverside recognize that we are privileged
         to live in the U.S. where higher education and healthier living
