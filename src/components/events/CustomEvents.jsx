@@ -1,7 +1,9 @@
+import { COLORS } from "@/data/colors";
+
 const CustomEvent = ({ event }) => {
   return (
-    <div className={`${event.color}  text-sm flex justify-start`}>
-      <p className="whitespace-nowrap  m-0">
+    <div className={`${COLORS[event.color].bg}  text-sm flex justify-start`}>
+      <p className="whitespace-nowrap m-0">
         {!event.allDay &&
           new Date(event.start).toLocaleTimeString(navigator.language, {
             hour: "2-digit",

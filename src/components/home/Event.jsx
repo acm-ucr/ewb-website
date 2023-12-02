@@ -5,7 +5,7 @@ const getTimeString = (date) => {
   const dateArr = date.toLocaleTimeString().split(":");
   return `${dateArr[0]}:${dateArr[1]}${dateArr[2].split(" ")[1]}`;
 };
-const Event = ({ start, end, location, name, descripton, color }) => {
+const Event = ({ start, location, name, descripton, color }) => {
   return (
     <motion.div
       initial={{ y: -10, opacity: 0 }}

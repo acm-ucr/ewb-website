@@ -34,20 +34,7 @@ const EvnetsPage = () => {
               ? new Date(event.start.dateTime)
               : new Date(event.start.date + "T00:00:00-07:00"),
             end: new Date(event.end.dateTime || event.end.date),
-            eventColor: event.description
-              ?.toLowerCase()
-              .startsWith("general meeting")
-              ? "blue-100"
-              : event.description?.toLowerCase().startsWith("social")
-              ? "blue"
-              : "green",
-            color: event.description
-              ?.toLowerCase()
-              .startsWith("general meeting")
-              ? "bg-ewb-blue-100 text-black"
-              : event.description?.toLowerCase().startsWith("social")
-              ? "bg-ewb-blue-200 text-white"
-              : "bg-ewb-green text-white",
+            color: "green",
           }))
         );
       });

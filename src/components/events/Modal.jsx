@@ -1,9 +1,14 @@
+import { COLORS } from "@/data/colors";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const Modal = ({ event, setEvent }) => {
   return (
     <div className="fixed top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75vw] md:w-[50vw] bg-pad-beige z-10 drop-shadow-lg">
-      <div className={`flex justify-between items-center ${event.color}`}>
+      <div
+        className={`flex justify-between items-center ${
+          COLORS[event.color].bg
+        }`}
+      >
         <p className={` m-0 py-2 md:py-3 px-3 md:px-4 text-lg md:text-2xl`}>
           {event.summary}
         </p>

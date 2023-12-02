@@ -16,9 +16,9 @@ const EventDescriptions = ({ events }) => {
                 start={event.start}
                 end={event.end}
                 location={event.location}
-                name={event.name}
+                name={event.summary}
                 descripton={event.description}
-                color={event.eventColor}
+                color={event.color}
               />
             ))
         ) : (
