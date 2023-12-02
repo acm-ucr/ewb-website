@@ -15,7 +15,7 @@ const monthNames = [
 ];
 const CustomToolbar = (event) => {
   return (
-    <div className="flex justify-center items-center w-full py-3 flex-col md:flex-row">
+    <div className="flex justify-center items-center w-full py-3 flex-row">
       <AiOutlineArrowLeft
         onClick={() => {
           console.log("hi");
