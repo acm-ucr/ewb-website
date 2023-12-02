@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rbc-header {
+  padding: 0;
+  background: #1051d3;
+}
