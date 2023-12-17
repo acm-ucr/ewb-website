@@ -17,7 +17,7 @@ const Title = ({ subTitle, title }) => {
       className="relative flex flex-col justify-center items-center z-20"
     >
       <p className={COLORS.green.text + " font-semibold mb-0"}>{subTitle}</p>
-      <p className="mt-0 font-bold text-2xl md:text-3xl">
+      <p className="mt-0 font-bold text-2xl md:text-4xl">
         <span
           className={
             COLORS.blue.bg +
