@@ -7,7 +7,7 @@ const Project = ({ name, description, link, index }) => {
       <div className="text-ewb-blue-200 text-lg md:text-2xl font-bold underline underline-offset-8 decoration-ewb-green text-center">
         {name}
       </div>
-      <div className="py-6 px-4 text-center text-xs md:text-base">
+      <div className="py-6 px-4 text-center text-xs md:text-base lg:text-lg">
         {description}
       </div>
       <ArrowLink text="learn more" link={link} />

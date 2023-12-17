@@ -2,7 +2,7 @@ import Subtitle from "../Subtitle";
 import img1 from "../../../public/images/robotics/Robotics1.gif";
 const Robotics = () => {
   return (
-    <div className="grid grid-cols-3 gap-10 my-16 justify-around w-10/12 md:w-9/12">
+    <div className="grid grid-cols-3 gap-10 my-16 justify-around w-10/12 md:w-9/12 text-base lg:text-lg">
       <div className="col-span-3 md:col-span-2 justify-center flex flex-col">
         <Subtitle title="General Overview" />
         <p className="mt-1 ml-4 text-justify">

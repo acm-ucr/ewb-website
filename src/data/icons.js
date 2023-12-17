@@ -1,15 +1,11 @@
-import {
-  BsEnvelope,
-  BsFacebook,
-  BsInstagram,
-  BsLinkedin,
-} from "react-icons/bs";
+import { BsEnvelope, BsFacebook, BsInstagram } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineHandshake } from "react-icons/md";
 
 export const ICONS = {
   email: <BsEnvelope />,
   facebook: <BsFacebook />,
-  linkedin: <BsLinkedin />,
+  linkedin: <FaLinkedinIn />,
   handshake: <MdOutlineHandshake />,
   instagram: <BsInstagram />,
 };
