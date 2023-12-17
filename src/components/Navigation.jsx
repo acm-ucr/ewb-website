@@ -20,7 +20,7 @@ const Navigation = () => {
       fixed="top"
       className="w-full m-0 md:h-[8vh] p-0 flex px-3 !bg-white justify-between items-center"
     >
-      <Navbar.Brand className="p-0 min-h-full text-ewb-blue-200 font-bold">
+      <Navbar.Brand className="p-0 min-h-full text-ewb-blue-200 font-bold hover:text-ewb-green duration-150">
         <Link
           onClick={() => setSelected("")}
           href="/"
