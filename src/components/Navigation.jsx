@@ -11,6 +11,7 @@ import { FaBars } from "react-icons/fa";
 
 const Navigation = () => {
   const [selected, setSelected] = useState("");
+  const [show, setShow] = useState(false);
 
   return (
     <Navbar
@@ -19,13 +20,14 @@ const Navigation = () => {
       fixed="top"
       className="w-full m-0 md:h-[8vh] p-0 flex px-3 !bg-white justify-between items-center"
     >
-      <Navbar.Brand className="p-0 min-h-full">
+      <Navbar.Brand className="p-0 min-h-full text-ewb-blue-200 font-bold">
         <Link
           onClick={() => setSelected("")}
           href="/"
           className="items-center flex min-h-full"
         >
           <Image src={blueLogo} className="h-full p-2" />
+          EWB at UCR
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -34,13 +36,19 @@ const Navigation = () => {
       >
         <FaBars className="text-ewb-blue-200 text-xl" />
       </Navbar.Toggle>
-      <Navbar.Collapse className="items-center md:justify-end justify-center h-full">
-        <Nav className="mb-2 no-underline text-lg flex items-center gap-2 mr-4 h-full">
+      <Navbar.Collapse className="md:justify-end justify-center h-full items-center">
+        <Nav className="no-underline text-lg flex items-center gap-2 mr-4 h-full">
           {navigation.map((item, index) => (
             <div key={index}>
               {item.sub.length > 0 ? (
                 <NavDropdown
-                  onClick={() => setSelected(item.name)}
+                  show={show}
+                  onMouseEnter={() => setShow(true)}
+                  onMouseLeave={() => setShow(false)}
+                  onClick={() => {
+                    setSelected(item.name);
+                    setShow(!show);
+                  }}
                   className="[&>*]:!border-0 [&>*]:!p-0 [&>*]:!m-0 [&>*]:!bg-transparent"
                   title={
                     <span
