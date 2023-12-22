@@ -7,7 +7,7 @@ import { LINKS } from "@/data/links";
 const Footer = () => {
   return (
     <div className="w-full bg-ewb-blue-200 border-t-[20px] border-t-ewb-green pt-8 flex justify-between relative">
-      <div className="flex itemrs-end m-3 gap-3 text-white font-bold text-xl w-1/2">
+      <div className="flex items-end m-3 gap-3 text-white font-bold text-xl w-1/2">
         <Image src={whiteLogo} alt="EWB Logo" />
         <p className="text-xs md:text-lg">EWB at UCR</p>
       </div>
