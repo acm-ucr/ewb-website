@@ -13,7 +13,7 @@ const EventDescription = ({ event, index }) => {
         {event.summary}
       </div>
       <div className="flex flex-row w-full -translate-x-2 md:-translate-x-10">
-        <div className="h-2.5 w-2.5 rotate-45 bg-pad-purple" />
+        <div className="h-2.5 w-2.5 rotate-45" />
         <div className="translate-y-1 h-0.5 w-36 bg-ewb-blue-100" />
       </div>
 
