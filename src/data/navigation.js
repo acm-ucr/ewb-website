@@ -18,11 +18,7 @@ export const navigation = [
       { name: "Air Quality System", link: "/air-quality-system" },
     ],
   },
-  {
-    name: "EVENTS",
-    link: "/events",
-    sub: [],
-  },
+
   {
     name: "BOARD",
     link: "/board",
