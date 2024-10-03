@@ -20,7 +20,7 @@ const Board = ({ name, position, grade, major, links, pronouns, picture }) => {
       <div className="font-light text-sm">
         {grade} {"\u2E31"} {major}
       </div>
-      <div className="font-light text-lg">Pronous: {pronouns}</div>
+      <div className="font-light text-lg">Pronouns: {pronouns}</div>
     </div>
   );
 };
