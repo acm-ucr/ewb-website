@@ -63,7 +63,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           path: ./out
-          
+
     # env:
     #   NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
     #   NEXT_PUBLIC_CALENDAR_ID: ${{secrets.NEXT_PUBLIC_CALENDAR_ID}}
