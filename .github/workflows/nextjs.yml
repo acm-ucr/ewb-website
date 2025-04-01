@@ -60,9 +60,10 @@ jobs:
       - name: touch
         run: touch ./.nojekyll
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           path: ./out
+
     # env:
     #   NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
     #   NEXT_PUBLIC_CALENDAR_ID: ${{secrets.NEXT_PUBLIC_CALENDAR_ID}}
