@@ -63,6 +63,12 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
+      - name: Dummy step to resolve upload-artifact@v3
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy-artifact
+          path: ./nonexistent-folder
+          if-no-files-found: ignore
     # env:
     #   NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
     #   NEXT_PUBLIC_CALENDAR_ID: ${{secrets.NEXT_PUBLIC_CALENDAR_ID}}
