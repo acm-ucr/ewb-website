@@ -1,32 +1,29 @@
 "use client";
 import Navbar from "react-bootstrap/Navbar";
-import blueLogo from "../../public/assets/blueLogo.svg";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
 import Image from "next/image";
-import { navigation } from "../data/navigation";
-import Nav from "react-bootstrap/Nav";
-import { useState, useEffect } from "react";
-import { NavDropdown } from "react-bootstrap";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 
+import blueLogo from "../../public/assets/blueLogo.svg";
+import { navigation } from "../data/navigation";
+
 const Navigation = () => {
   const pathname = usePathname();
-  const [selected, setSelected] = useState("");
   const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    const match = navigation.find((item) => {
-      if (item.link && pathname === item.link) return true;
-      if (item.sub.length > 0) {
-        return item.sub.some((sub) =>
-          pathname.startsWith("/projects" + sub.link)
-        );
-      }
-      return false;
-    });
-    if (match) setSelected(match.name);
-  }, [pathname]);
+  const isItemActive = (item) => {
+    if (item.link && pathname === item.link) return true;
+    if (item.sub.length > 0) {
+      return item.sub.some((sub) =>
+        pathname.startsWith("/projects" + sub.link)
+      );
+    }
+    return false;
+  };
 
   return (
     <Navbar
@@ -36,11 +33,7 @@ const Navigation = () => {
       className="w-full m-0 md:h-[8vh] p-0 flex px-3 !bg-white justify-between items-center"
     >
       <Navbar.Brand className="p-0 min-h-full text-ewb-blue-200 font-bold hover:text-ewb-green duration-150">
-        <Link
-          onClick={() => setSelected("")}
-          href="/"
-          className="items-center flex min-h-full"
-        >
+        <Link href="/" className="items-center flex min-h-full">
           <Image src={blueLogo} alt="EWB Logo" className="h-full p-2" />
           EWB at UCR
         </Link>
@@ -62,15 +55,12 @@ const Navigation = () => {
                   show={show}
                   onMouseEnter={() => setShow(true)}
                   onMouseLeave={() => setShow(false)}
-                  onClick={() => {
-                    setSelected(item.name);
-                    setShow(!show);
-                  }}
+                  onClick={() => setShow(!show)}
                   className="[&>*]:!border-0 [&>*]:!p-0 [&>*]:!m-0 [&>*]:!bg-transparent"
                   title={
                     <span
                       className={`hover:cursor-pointer rounded-full mb-0 py-1 px-4 no-underline !text-black text-lg whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
-                        selected === item.name &&
+                        isItemActive(item) &&
                         "!bg-ewb-blue-200 rounded-full !text-white hover:!text-white"
                       }`}
                     >
@@ -92,9 +82,8 @@ const Navigation = () => {
                 <Nav.Link
                   as={Link}
                   href={item.link}
-                  onClick={() => setSelected(item.name)}
                   className={`hover:cursor-pointer rounded-full mb-0 py-0 px-4 no-underline !text-black text-lg whitespace-nowrap !font-normal hover:!text-blue-600 duration-300 ${
-                    selected === item.name &&
+                    isItemActive(item) &&
                     "!bg-ewb-blue-200 rounded-full !text-white hover:!text-white"
                   }`}
                 >
